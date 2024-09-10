@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="/probuilder/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/probuilder/static/logo.png" class="navbar-logo">
+            <img src="/probuilder/static/logo.png" alt="Logo" class="logo-img">
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Descarga</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <header>
+            <h1>PROBUILDER</h1>
+        </header>
+        <section class="carousel">
+            <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-inner">
+                <img src="/probuilder/static/imagen1.jpg" alt="Imagen 1">
+                <img src="/probuilder/static/imagen2.jpg" alt="Imagen 2">
+                <img src="/probuilder/static/imagen3.jpg" alt="Imagen 3">
+            </div>
+            <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+    
+        <section id="quienes-somos" class="quienes-somos">
+            <h2>Quiénes Somos</h2>
+            <div class="columns">
+                <div class="column left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati reprehenderit fugiat similique cupiditate voluptatibus officia, maiores quis exercitationem minus impedit corporis culpa pariatur quidem non saepe, excepturi in, libero eum?
+                    </p>
+                </div>
+                <div class="column right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas distinctio, sequi neque dolores nostrum dignissimos rerum ex ipsam, fuga dolorem velit, quidem explicabo labore? Ex consequatur temporibus amet vero accusamus?</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contacto" class="contacto">
+            <div class="contacto-box">
+                <h2>Contáctanos</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="/probuilder/static/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="/probuilder/static/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <img src="/probuilder/static/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+                <h3>Déjanos un Mensaje</h3>
+                <div class="contacto-form">
+                    <div class="contacto-info">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo">
+                    </div>
+                    <div class="contacto-message">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" maxlength="300"></textarea>
+                        <div id="char-count">300 caracteres restantes</div> <!-- Añade este div para contar los caracteres -->
+                    </div>
+                    <button id="enviar-btn" type="button" disabled>Enviar</button>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Probuilder. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/js/main.js"></script> 
+</body>
+</html>
